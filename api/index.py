@@ -10,4 +10,8 @@ def status():
 def next_app():
     return {"message": "from nextjs api"}
 
+@app.get("/api/status")
+def next_app_route():
+    return {"message": "from nextjs api"}
+
 
