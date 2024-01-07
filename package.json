@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"npm run next-dev\" \"npm run fast-dev\"",
-    "fast-dev": "pip install requirements.txt && python -m uvicorn --app-dir api index:app --reload",
+    "fast-dev": "pip install -r requirements.txt && python -m uvicorn --app-dir api index:app --reload",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
